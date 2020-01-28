@@ -7,8 +7,10 @@ Welcome to Proof of Concepts's documentation!
 =============================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
+
+   vms
 
 
 
