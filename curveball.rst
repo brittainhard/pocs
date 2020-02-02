@@ -1,8 +1,9 @@
 CurveBall (CVE-2020-0601)
 =========================
 
-Hey!
+From what I heard on Security Now, the exploit happens because crypt32.dll is allowing people to supply their own arguments (?) to the elliptic curve encryption function.
 
+The root certificate for this ECC vulnerability is found in the Trusted Root Certification Authorities folder in the certificate manager. It is called "Microsoft ECC Product Root Certificate Authority 2018"
 
 Links
 -----
@@ -15,3 +16,7 @@ Exploiting this requires a Windows 10 VM with some version before
 
 Post on `medium
 <https://medium.com/zengo/win10-crypto-vulnerability-cheating-in-elliptic-curve-billiards-2-69b45f2dcab6>`_ contains a useful explanation of ECC.
+
+Here's a good post on how to disable automatic updates `https://www.windowscentral.com/how-stop-updates-installing-automatically-windows-10`_.
+
+The existing POC: `https://github.com/ollypwn/CurveBall`_.
